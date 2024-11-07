@@ -1,0 +1,17 @@
+.menu_bar { 
+    height: 100vh; 
+    width: 72px; 
+    border-right: 1px solid lightgray; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 12px;
+}
+
+.menu_bar_middle { 
+    margin: 32px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+

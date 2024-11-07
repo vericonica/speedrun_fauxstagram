@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import MenuBar from "./components/MenuBar";
+import TopMenuBar from "./components/TopMenuBar";
+import { useMediaQuery } from "usehooks-ts";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,9 +26,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <MenuBar />
         {children}
       </body>
     </html>
