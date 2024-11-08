@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import MenuBar from "./components/MenuBar";
-import TopMenuBar from "./components/TopMenuBar";
-import { useMediaQuery } from "usehooks-ts";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
