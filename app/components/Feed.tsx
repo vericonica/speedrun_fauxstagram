@@ -4,7 +4,7 @@ import FeedPost from './FeedPost/FeedPost';
 
 const Feed: FC = () => { 
     const postsData = [
-        {}, {}, {}
+        "1", "2", "3"
     ]
     return <div className={styles.feed}>
         {postsData.map((data, i) => <FeedPost data={data} key={i}/>)}
