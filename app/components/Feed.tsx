@@ -7,7 +7,7 @@ const Feed: FC = () => {
         {}, {}, {}
     ]
     return <div className={styles.feed}>
-        {postsData.map(data => <FeedPost data={data}/>)}
+        {postsData.map((data, i) => <FeedPost data={data} key={i}/>)}
     </div>
 }
 

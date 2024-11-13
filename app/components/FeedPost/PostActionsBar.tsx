@@ -22,7 +22,7 @@ const PostActionsBar: FC<PostActionsBarProps> = () => {
 }
 
 interface PostActionsBarProps { 
-
+    x?:string
 }
 
 export default PostActionsBar

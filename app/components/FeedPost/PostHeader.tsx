@@ -5,6 +5,7 @@ const PostHeader: FC<PostHeaderProps> = ({
     username, 
     timeStamp
 }) => { 
+    console.log(username, timeStamp)
 
     return <div className={styles.feed_post_header}>
         <div>

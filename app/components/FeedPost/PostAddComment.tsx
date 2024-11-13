@@ -5,7 +5,7 @@ const PostAddComment: FC<PostAddCommentProps> = () => {
 }
 
 interface PostAddCommentProps { 
-
+    x?:string
 }
 
 export default PostAddComment

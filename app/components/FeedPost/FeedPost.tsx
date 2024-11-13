@@ -9,7 +9,7 @@ import PostComments from './PostComments'
 import PostLikesCount from './PostLikesCount'
 
 const FeedPost: FC<FeedPostProps> = ({data}) => { 
-
+    console.log('data', data)
     return <div className={styles.feed_post}>
         <PostHeader username="user" timeStamp="now"/>
         <div style={{height: "468px", width:"468px", border: "1px solid pink"}}>
