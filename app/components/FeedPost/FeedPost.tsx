@@ -25,7 +25,7 @@ const FeedPost: FC<FeedPostProps> = ({data}) => {
 }
 
 interface FeedPostProps{ 
-    data: {}
+    data: string;
 }
 
 export default FeedPost;
