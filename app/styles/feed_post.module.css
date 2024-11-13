@@ -1,0 +1,36 @@
+.feed_post { 
+    height: 600px;
+    width: 468px;
+    background-color: antiquewhite;
+}
+
+.feed_post_header { 
+    background-color: cadetblue;
+}
+
+.post_action_bar { 
+    display: flex; 
+    justify-content: space-between;
+
+}
+
+.post_action_bar_left { 
+    display: flex; 
+    gap: 8px;
+
+}
+
+.post_action_bar_right { 
+
+}
+
+.post_likes_count { 
+    height: 100px; 
+    width: 100%; 
+    background-color: khaki;
+
+}
+
+.post_caption { 
+    display: inline; 
+}
