@@ -12,10 +12,17 @@ export const Logo: FC = () => {
     </svg>
 }
 
-export const Search: FC = () => {
+export const Search: FC<IconProps> = ({color}) => {
     return <svg height="24" width="24">
-      <path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
-      <line fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="16.511" x2="22" y1="16.511" y2="22"></line>
+      <path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke={color ?? "currentColor"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+      <line fill="none" stroke={color ?? "currentColor"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="16.511" x2="22" y1="16.511" y2="22"></line>
+       </svg>
+}
+
+export const SmallSearch: FC<IconProps> = ({color}) => {
+    return <svg viewBox="0 0 24 24" height="16" width="16">
+      <path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke={color ?? "currentColor"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"></path>
+      <line fill="none" stroke={color ?? "currentColor"} strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" x1="16.511" x2="22" y1="16.511" y2="22"></line>
        </svg>
 }
 
@@ -66,3 +73,12 @@ export const Hamburger: FC = () => {
     </svg>
 }
 
+export const DownCaret: FC = () => { 
+    return <svg viewBox="0 0 24 24"height="12" width="12">
+        <path d="M12 17.502a1 1 0 0 1-.707-.293l-9-9.004a1 1 0 0 1 1.414-1.414L12 15.087l8.293-8.296a1 1 0 0 1 1.414 1.414l-9 9.004a1 1 0 0 1-.707.293Z"/>
+    </svg>
+}
+
+interface IconProps { 
+    color?: string;
+}

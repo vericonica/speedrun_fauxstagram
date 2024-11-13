@@ -1,7 +1,7 @@
 .menu_bar { 
     height: 100vh; 
     width: 72px; 
-    border-right: 1px solid lightgray; 
+    border-right: 1px solid rgb(239, 239, 239); 
     display: flex; 
     flex-direction: column;
     justify-content: space-between;

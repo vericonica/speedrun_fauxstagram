@@ -7,7 +7,7 @@ import SearchBar from './SearchBar';
 const TopMenuBar: FC = () => { 
     return <nav className={styles.top_menu_bar}>
         <MobileNavMenu />
-        <div>
+        <div className={styles.top_menu_bar_right}>
             <SearchBar /> 
             <IconLink name="likes" href="/notifications"/>
         </div>
