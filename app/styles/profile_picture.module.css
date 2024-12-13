@@ -1,0 +1,7 @@
+.profile_picture_container { 
+    height: 32px; 
+    width: 32px; 
+    background-color: lightblue; 
+    border-radius: 50%;
+    border: 1px solid black;
+}

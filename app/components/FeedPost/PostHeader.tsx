@@ -1,5 +1,7 @@
 import { FC } from 'react'
 import styles from "../../styles/feed_post.module.css"
+import ProfilePicture from '../ProfilePicture'
+import TimeStampSince from '../TimeStampSince'
 
 const PostHeader: FC<PostHeaderProps> = ({
     username, 
@@ -8,12 +10,12 @@ const PostHeader: FC<PostHeaderProps> = ({
     console.log(username, timeStamp)
 
     return <div className={styles.feed_post_header}>
-        <div>
+        <div className={styles.feed_post_header_right}>
+            <ProfilePicture />
         {/* <Profile Picture /> */}
-        {/* <UserName username={username}/> */}
-        {/* div styled as dot divider */}
-        {/* <TimeSinceStamp timeStamp={timeStamp}/> -- has hover full timestap (readable DateTime) */}
-        </div>
+        <div style={{fontWeight: "600"}}>Username_username</div>
+        <TimeStampSince />
+       </div>
         {/* <MeatballsButtom /> */}
     </div>
 }

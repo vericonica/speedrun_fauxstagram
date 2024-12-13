@@ -12,6 +12,7 @@
   justify-items: center;
   min-height: 100svh;
   padding: 80px;
+  padding-top: 0px;
   gap: 64px;
   font-family: var(--font-geist-sans);
 }
@@ -32,6 +33,8 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  height: 100vh; 
+  overflow: clip;
 }
 
 .main ol {

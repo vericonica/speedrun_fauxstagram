@@ -1,11 +1,27 @@
 .feed_post { 
-    height: 650px;
+    height: 700px;
     width: 468px;
     border-bottom: 1px solid lightgray;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
 }
 
 .feed_post_header { 
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    width: 100%;
+    height: 48px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.feed_post_header_right { 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    /* flex-direction: row; */
 }
 
 .post_action_bar { 

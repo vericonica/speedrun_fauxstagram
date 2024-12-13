@@ -1,0 +1,7 @@
+.time_stamp_since { 
+    display: flex; 
+    color: lightgray;
+    font-size: 14px;
+    align-items: center;
+    gap: 4px;
+}
