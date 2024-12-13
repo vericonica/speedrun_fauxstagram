@@ -12,7 +12,7 @@ const FeedPost: FC<FeedPostProps> = ({data}) => {
     console.log('data', data)
     return <div className={styles.feed_post}>
         <PostHeader username="user" timeStamp="now"/>
-        <div style={{height: "468px", width:"468px", border: "1px solid pink"}}>
+        <div style={{height: "468px", width:"468px"}}>
             <Image src="/antarctica.png" alt="antarctica" height={468} width={468}/>
         </div>
         <PostActionsBar />

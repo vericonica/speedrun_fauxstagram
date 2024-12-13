@@ -1,9 +1,9 @@
 import { FC } from 'react'
-import styles from "../../styles/feed.module.css"
+import styles from "../../styles/feed_post.module.css"
 
 const PostLikesCount: FC<PostLikesCountProps> = ({count}) => {
     return <div className={styles.post_likes_count}>
-        {count} Likes
+        {count} likes
     </div>
 }
 

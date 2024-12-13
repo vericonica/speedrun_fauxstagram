@@ -1,7 +1,7 @@
 .feed_post { 
-    height: 600px;
+    height: 650px;
     width: 468px;
-    background-color: antiquewhite;
+    border-bottom: 1px solid lightgray;
 }
 
 .feed_post_header { 
@@ -9,6 +9,7 @@
 }
 
 .post_action_bar { 
+    margin-top: 8px;
     display: flex; 
     justify-content: space-between;
 
@@ -25,12 +26,32 @@
 }
 
 .post_likes_count { 
-    height: 100px; 
-    width: 100%; 
-    background-color: khaki;
+    margin-top: 8px;
+    font-size: 14px; 
+    font-weight: 600;
+    /* font- */
 
 }
 
 .post_caption { 
-    display: inline; 
+    margin-top: 8px;
+    display: flex;
+    font-size: 14px;
+}
+
+.post_caption_username { 
+    font-weight: 600; 
+    margin-right: 4px;
+}
+
+.post_comments { 
+    font-size: 14px; 
+    margin-top: 6px; 
+    color: gray;
+}
+
+.post_add_comment { 
+    font-size: 14px; 
+    margin-top: 8px; 
+    color: gray;
 }
